@@ -1,3 +1,4 @@
+require 'pry'
 class Song
   attr_accessor :name, :artist, :genre
   @@count = 0
@@ -35,7 +36,7 @@ class Song
     end
 
     @@genres.each do |genre|
-      binding.pry 
+      binding.pry
       hash[genre] += 1
     end
       return hash
