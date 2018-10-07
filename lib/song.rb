@@ -30,16 +30,20 @@ class Song
   end
 
   def self.genre_count
-    hash = {}
+    genre_count_hash = {}
     @@genres.uniq.each do |genre|
-      hash[genre] = 0
+      genre_count_hash[genre] = 0
     end
 
     @@genres.each do |genre|
-      binding.pry
-      hash[genre] += 1
+      genre_count_hash[genre] += 1
     end
-      return hash
+      return genre_count_hash
   end
+
+  def self.artist_count
+    artist_count_hash = {}
+    @@artists.uniq.each do |artist|
+      ar
 
 end
