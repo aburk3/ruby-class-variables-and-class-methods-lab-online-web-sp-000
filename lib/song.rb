@@ -33,6 +33,11 @@ class Song
     @@genres.uniq.each do |genre|
       hash[genre] = 0
     end
+
+    @@genres.each do |genre|
+      hash[genre] += 1
+    end
+    
   end
 
 end
