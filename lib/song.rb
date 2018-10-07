@@ -35,6 +35,7 @@ class Song
     end
 
     @@genres.each do |genre|
+      binding.pry 
       hash[genre] += 1
     end
       return hash
